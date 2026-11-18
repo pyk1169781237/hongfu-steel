@@ -497,8 +497,78 @@ header nav a.nav-flag{color:var(--orange2)!important;font-weight:700}
 
 </style>
 <script>document.documentElement.className+=' motion';</script>
+<!-- HF-TRACK-START -->
+<!-- Hongfu conversion tracking v1 | ONLY edit gtmId / ga4Id below -->
+<script id="hf-tracking">
+(function (w, d) {
+  /* ACTIVE MODE: GTM (recommended)  |  Container ID: GTM-N5TG5QZ8
+     GA4 property G-DY855QEV8E is configured INSIDE the GTM container,
+     in the "GA4 Configuration" tag (see stage 5) - NOT in this file.
+     NEVER fill both gtmId and ga4Id - it double-counts pageviews. */
+  var CFG = { gtmId: 'GTM-N5TG5QZ8', ga4Id: '' };
+  var PAGE = { type: 'home', lang: 'zh-CN', product: '' };
+
+  w.dataLayer = w.dataLayer || [];
+  w.dataLayer.push({
+    page_type: PAGE.type,
+    page_language: PAGE.lang,
+    product_name: PAGE.product
+  });
+
+  function push(o) { try { w.dataLayer.push(o); } catch (e) {} }
+  function fire(name, p) {
+    var e = { event: name }, k;
+    for (k in p) { if (Object.prototype.hasOwnProperty.call(p, k)) e[k] = p[k]; }
+    push(e);
+    if (typeof w.gtag === 'function') { try { w.gtag('event', name, p); } catch (err) {} }
+  }
+  function val(x) { return typeof x === 'string' ? x.trim() : ''; }
+
+  var gtm = val(CFG.gtmId), ga4 = val(CFG.ga4Id);
+  if (/^GTM-[A-Za-z0-9]+$/.test(gtm)) {
+    push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' });
+    var s = d.createElement('script');
+    s.async = true;
+    s.src = 'https://www.googletagmanager.com/gtm.js?id=' + encodeURIComponent(gtm);
+    d.head.insertBefore(s, d.head.firstChild);
+  } else if (/^G-[A-Za-z0-9]+$/.test(ga4)) {
+    w.gtag = w.gtag || function () { w.dataLayer.push(arguments); };
+    w.gtag('js', new Date());
+    w.gtag('config', ga4, { page_title: d.title });
+    var g = d.createElement('script');
+    g.async = true;
+    g.src = 'https://www.googletagmanager.com/gtag/js?id=' + encodeURIComponent(ga4);
+    d.head.insertBefore(g, d.head.firstChild);
+  }
+
+  /* Lead events: email / WhatsApp / phone / quote-button clicks */
+  d.addEventListener('click', function (ev) {
+    var n = ev.target;
+    while (n && n !== d && (!n.tagName || n.tagName.toLowerCase() !== 'a')) n = n.parentNode;
+    if (!n || n === d) return;
+    var href = n.getAttribute('href') || '';
+    var kind = '';
+    if (/^mailto:/i.test(href)) kind = 'email';
+    else if (/^tel:/i.test(href)) kind = 'phone';
+    else if (/wa\.me|whatsapp/i.test(href)) kind = 'whatsapp';
+    else if (/#contact/i.test(href)) kind = 'quote_button';
+    if (!kind) return;
+    fire('generate_lead', {
+      lead_type: kind,
+      page_type: PAGE.type,
+      page_language: PAGE.lang,
+      product_name: PAGE.product,
+      link_url: href
+    });
+  }, false);
+})(window, document);
+</script>
+<!-- HF-TRACK-END -->
 </head>
 <body>
+<!-- HF-TRACK-NOSCRIPT-START -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N5TG5QZ8" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- HF-TRACK-NOSCRIPT-END -->
 <div id="progress"></div>
 
 <div class="topbar"><div class="container"><span>中国 · 上海　　钢材贸易与加工　始于 2021</span><span>电话 / WhatsApp / 微信 <b>+86 150 0187 7465</b></span></div></div>
