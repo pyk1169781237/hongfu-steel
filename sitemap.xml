@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://www.hongfu-steel.com/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.hongfu-steel.com/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://www.hongfu-steel.com/zh.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.hongfu-steel.com/"/>
+    <lastmod>2026-11-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://www.hongfu-steel.com/zh.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.hongfu-steel.com/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://www.hongfu-steel.com/zh.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.hongfu-steel.com/"/>
+    <lastmod>2026-11-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.hongfu-steel.com/galvanized-steel-coil.html</loc>
+    <lastmod>2026-11-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.hongfu-steel.com/cold-rolled-steel-coil.html</loc>
+    <lastmod>2026-11-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.hongfu-steel.com/galvalume-steel-coil.html</loc>
+    <lastmod>2026-11-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.hongfu-steel.com/bearing-steel-round-bar.html</loc>
+    <lastmod>2026-11-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+</urlset>
